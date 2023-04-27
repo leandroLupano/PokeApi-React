@@ -31,6 +31,7 @@ export class PokemonApiRepo implements PokemonRepo<PokemonStructure[]> {
       promisesPokemonArray
     );
 
+    console.log(pokemonArray);
     return pokemonArray;
   }
 }
