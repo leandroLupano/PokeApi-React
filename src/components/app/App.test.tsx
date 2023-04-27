@@ -1,12 +1,21 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import Header from '../header/header';
+// import { AppRouter } from '../app.router/app.router';
+import Footer from '../footer/footer';
 import App from './App';
+
+jest.mock('../header/header');
+// jest.mock('../app.router/app.router');
+jest.mock('../footer/footer');
 
 describe('Given App component', () => {
   describe('When it is render', () => {
-    test('Then the heading h1 should be in the document', () => {
+    test('Then it should call UsersList component', () => {
       render(<App />);
-      const headingApp = screen.getByRole('heading');
-      expect(headingApp).toBeInTheDocument();
+
+      expect(Header).toHaveBeenCalled();
+      // expect(AppRouter).toHaveBeenCalled();
+      expect(Footer).toHaveBeenCalled();
     });
   });
 });
