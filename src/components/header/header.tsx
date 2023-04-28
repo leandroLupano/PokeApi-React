@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import style from './header.style.module.scss';
+import NavMenu from '../nav.menu/nav.menu';
 
 export default function Header() {
   return (
@@ -14,9 +15,9 @@ export default function Header() {
         </Link>
       </div>
 
-      {/* <div className={style.headerNavMenu}>
+      <div className={style.headerNavMenu}>
         <NavMenu></NavMenu>
-      </div> */}
+      </div>
     </header>
   );
 }
