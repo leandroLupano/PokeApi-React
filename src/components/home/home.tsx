@@ -21,8 +21,12 @@ export default function Home() {
       <p className={style.homePokeApiLink}>
         This website is built with the&nbsp;
         <a href="https://pokeapi.co/"> RESTful Pokémon API</a>
-        <img src="./images/pikachu.png" alt="Pikachu face" />
       </p>
+      <img
+        className={style.homePikachuImg}
+        src="./images/pikachu.png"
+        alt="Pikachu face"
+      />
     </section>
   );
 }

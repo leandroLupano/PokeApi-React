@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   min-height: 70vh;
   background-color: #c59797;
 
@@ -20,7 +20,7 @@
   }
 
   .homeMainText {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: 'Comic Neue', cursive;
     font-weight: bold;
   }
@@ -29,17 +29,14 @@
     font-size: 1.2rem;
     font-family: 'Comic Neue', cursive;
     font-weight: bold;
-    display: flex;
-    flex-direction: row;
 
     a {
       color: blue;
       cursor: pointer;
     }
+  }
 
-    img {
-      width: 30px;
-      margin: 0rem 1rem;
-    }
+  .homePikachuImg {
+    width: 50px;
   }
 }
