@@ -1,7 +1,7 @@
 import { PokemonGroupLoaded, PokemonStructure } from '../../models/pokemon';
 
 export interface PokemonRepo<T> {
-  loadPokemon(): Promise<T>;
+  loadAllPokemon(): Promise<T>;
 }
 
 export class PokemonApiRepo implements PokemonRepo<PokemonStructure[]> {
@@ -11,7 +11,7 @@ export class PokemonApiRepo implements PokemonRepo<PokemonStructure[]> {
     this.url = 'https://pokeapi.co/api/v2/pokemon/';
   }
 
-  async loadPokemon(): Promise<PokemonStructure[]> {
+  async loadAllPokemon(): Promise<PokemonStructure[]> {
     const pokemonGroupLoadedFetch = await fetch(this.url);
     const pokemonGroupLoaded: PokemonGroupLoaded =
       await pokemonGroupLoadedFetch.json();

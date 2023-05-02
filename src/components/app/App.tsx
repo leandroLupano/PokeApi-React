@@ -5,7 +5,7 @@ import Header from '../header/header';
 
 function App() {
   const repo = new PokemonApiRepo();
-  repo.loadPokemon();
+  repo.loadAllPokemon();
 
   return (
     <div className="App">

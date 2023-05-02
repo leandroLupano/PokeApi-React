@@ -10,11 +10,11 @@ export interface PokemonAction extends Action {
   payload: PokemonStructure[];
 }
 
-export const loadPokemonCreator = (
+export const loadAllPokemonCreator = (
   payload: PokemonStructure[]
 ): PokemonAction => {
   return {
-    type: pokemonActions.load,
+    type: pokemonActions.loadAll,
     payload,
   };
 };

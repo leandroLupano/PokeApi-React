@@ -1,3 +1,3 @@
 export const pokemonActions = {
-  load: 'pokemon@load',
+  loadAll: 'pokemon@loadAll',
 };

@@ -7,7 +7,7 @@ export function pokemonReducer(
   action: PokemonAction
 ): PokemonStructure[] {
   switch (action.type) {
-    case pokemonActions.load:
+    case pokemonActions.loadAll:
       return action.payload as PokemonStructure[];
 
     default:

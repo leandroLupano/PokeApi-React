@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { NavOption, navMenuOptions } from './nav.menu.options';
 
 const Home = lazy(() => import('../home/home'));
-// const Pokemon = lazy(() => import('../pokemon/pokemon'));
+// const PokemonList = lazy(() => import('../pokemon.list/pokemon.list'));
 // const Favourites = lazy(() => import('../favourites/favourites'));
 // const Details = lazy(() => import('../details/details'));
 
@@ -19,7 +19,7 @@ export function AppRouter() {
         ></Route>
         {/* <Route
           path={navMenuOptionsArray[1].path}
-          element={<Pokemon></Pokemon>}
+          element={<PokemonList></PokemonList>}
         ></Route>
         <Route
           path={navMenuOptionsArray[2].path}
