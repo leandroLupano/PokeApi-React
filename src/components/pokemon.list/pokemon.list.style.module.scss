@@ -1,0 +1,17 @@
+.pokemonList {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  min-height: 70vh;
+  background-color: #c59797;
+
+  .pokemonListTitle {
+    width: 100%;
+    img {
+      max-width: 150px;
+    }
+  }
+}
