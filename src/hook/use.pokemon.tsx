@@ -9,7 +9,7 @@ export type UsePokemonStructure = ReturnType<typeof usePokemon>;
 export function usePokemon(repo: PokemonApiRepo) {
   const initialState: PokemonStructure[] = [];
 
-  const [pokemonList, dispatch] = useReducer(pokemonReducer, initialState);
+  const [pokemonListState, dispatch] = useReducer(pokemonReducer, initialState);
 
   const loadAllPokemon = useCallback(async () => {
     try {
@@ -22,7 +22,7 @@ export function usePokemon(repo: PokemonApiRepo) {
   }, [repo]);
 
   return {
-    pokemonList,
+    pokemonListState,
     loadAllPokemon,
   };
 }
