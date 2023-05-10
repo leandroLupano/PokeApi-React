@@ -1,0 +1,28 @@
+.header {
+  background-color: #ef5350;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem 0rem 2rem;
+
+  .headerLogo {
+    a {
+      cursor: inherit;
+    }
+
+    .headerLogoImg {
+      height: 10vh;
+      cursor: pointer;
+    }
+  }
+
+  .headerNavMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+  }
+}

@@ -1,9 +1,17 @@
+import { PokemonApiRepo } from '../../services/repository/pokemon.api.repo';
+import { AppRouter } from '../app.router/app.router';
+import Footer from '../footer/footer';
+import Header from '../header/header';
+
 function App() {
+  const repo = new PokemonApiRepo();
+  repo.loadAllPokemon();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>In progress...</h1>
-      </header>
+      <Header></Header>
+      <AppRouter></AppRouter>
+      <Footer></Footer>
     </div>
   );
 }

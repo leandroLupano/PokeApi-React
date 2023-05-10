@@ -1,0 +1,28 @@
+.pokemonList {
+  padding: 2rem 3rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  min-height: 70vh;
+  background-color: #c59797;
+
+  .pokemonListTitle {
+    width: 100%;
+    img {
+      max-width: 150px;
+    }
+  }
+
+  .pokemonListCard {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
